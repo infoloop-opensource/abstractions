@@ -1,0 +1,27 @@
+{
+   "name": "abstractions",
+   "version": "0.0.1",
+   "description": "A collection of general abstractions.",
+   "devDependencies": {
+      "@types/chai": "^4.2.3",
+      "@types/mocha": "^5.2.5",
+      "@types/node": "^8.0.29",
+      "chai": "^4.2.0",
+      "mocha": "^5.2.0",
+      "ts-node": "^8.1.0",
+      "typescript": "^3.4.5"
+   },
+   "dependencies": {},
+   "files": [
+      "dist"
+   ],
+   "main": "dist/cjs/index.js",
+   "module": "dist/es2015/index.js",
+   "types": "dist/cjs/index.d.ts",
+   "scripts": {
+      "build": "rm -rf dist && npm run build:es2015 && npm run build:cjs",
+      "build:es2015": "tsc --declaration --skipLibCheck --module es2015 --target es2015 --outDir dist/es2015",
+      "build:cjs": "tsc --declaration --skipLibCheck --module commonjs --target es5 --outDir dist/cjs",
+      "test": "mocha -r ts-node/register --timeout 50000 --exit src/**/*.test.ts"
+   }
+}
