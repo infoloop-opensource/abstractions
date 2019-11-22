@@ -2,6 +2,10 @@
    "name": "abstractions",
    "version": "0.0.1",
    "description": "A collection of general abstractions.",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/infoloop-opensource/abstractions"
+   },
    "devDependencies": {
       "@types/chai": "^4.2.3",
       "@types/mocha": "^5.2.5",
