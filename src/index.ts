@@ -2,6 +2,8 @@ export {
     Constructor,
     Class,
     RuntimeClassDecorator,
+    IntValuedEnum,
+    StringValuedEnum
 } from './esextends';
 
 export {
