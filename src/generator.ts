@@ -8,6 +8,13 @@ export interface Generator<T> {
 }
 
 /**
+ * TODO: better description of params
+ */
+export interface ParameterizedGenerator<T> {
+    (...params: any[]): Promise<T>;
+}
+
+/**
  * semantic alias
  * @alias module:unary.Generator
  */

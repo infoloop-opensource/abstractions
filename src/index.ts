@@ -6,6 +6,7 @@ export {
 
 export {
     Generator,
+    ParameterizedGenerator,
     Supplier,
     Producer
 } from './generator';
