@@ -18,7 +18,7 @@ export {
     Transformer,
     AsyncTransformer,
     Consumer
-} from './unary';
+} from './operator/unary';
 
 export {
     BinaryOperator,
@@ -30,4 +30,8 @@ export {
     Comparator,
     Reducer,
     Accumulator
-} from './binary';
+} from './operator/binary';
+
+export {
+    DataSource
+} from './data';
