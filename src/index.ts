@@ -17,6 +17,7 @@ export {
     UnaryOperator,
     Transformer,
     AsyncTransformer,
+    Predicate,
     Consumer
 } from './operator/unary';
 

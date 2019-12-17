@@ -14,4 +14,6 @@ export type Transformer<SourceType, TargetType> = UnaryOperator<SourceType, Targ
 
 export type AsyncTransformer<SourceType, TargetType> = Transformer<SourceType, Promise<TargetType>>;
 
+export type Predicate<T> = UnaryOperator<T, boolean>;
+
 export type Consumer<T> = UnaryOperator<T, Promise<void>>;
