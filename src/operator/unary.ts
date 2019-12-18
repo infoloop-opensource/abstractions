@@ -16,4 +16,7 @@ export type AsyncTransformer<SourceType, TargetType> = Transformer<SourceType, P
 
 export type Predicate<T> = UnaryOperator<T, boolean>;
 
-export type Consumer<T> = UnaryOperator<T, Promise<void>>;
+/**
+ * A boolean indicates whether the message has been consumed successfully.
+ */
+export type Consumer<T> = UnaryOperator<T, Promise<boolean>>;
