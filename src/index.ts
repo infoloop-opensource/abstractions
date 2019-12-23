@@ -34,5 +34,6 @@ export {
 } from './operator/binary';
 
 export {
-    DataSource
+    DataSource,
+    Being
 } from './data';

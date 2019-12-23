@@ -11,6 +11,7 @@ export interface UnaryOperator<OperandType, ReturnType> {
 export declare type Transformer<SourceType, TargetType> = UnaryOperator<SourceType, TargetType>;
 export declare type AsyncTransformer<SourceType, TargetType> = Transformer<SourceType, Promise<TargetType>>;
 export declare type Predicate<T> = UnaryOperator<T, boolean>;
+export declare type AsyncPredicate<T> = UnaryOperator<T, Promise<boolean>>;
 /**
  * A boolean indicates whether the message has been consumed successfully.
  */
