@@ -38,6 +38,6 @@ export interface Being<T> {
 }
 
 export interface Reloader<T> {
-    getCurrent(): T;
+    getCurrent(): T | undefined;
     reload(): Promise<void>;
 }

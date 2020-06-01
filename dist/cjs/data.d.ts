@@ -34,6 +34,6 @@ export interface Being<T> {
     id: number | string;
 }
 export interface Reloader<T> {
-    getCurrent(): T;
+    getCurrent(): T | undefined;
     reload(): Promise<void>;
 }
