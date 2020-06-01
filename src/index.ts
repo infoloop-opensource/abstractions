@@ -36,5 +36,6 @@ export {
 
 export {
     DataSource,
-    Being
+    Being,
+    Reloader
 } from './data';

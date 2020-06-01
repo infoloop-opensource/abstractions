@@ -33,3 +33,7 @@ export interface Being<T> {
     type: keyof T;
     id: number | string;
 }
+export interface Reloader<T> {
+    getCurrent(): T;
+    reload(): Promise<void>;
+}
